@@ -1,8 +1,27 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Premium font rendering */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #ffffff;
+}
+
+/* Subtle selection */
+::selection {
+  background: black;
+  color: white;
+}
+
+/* Glass effect utility */
+.glass {
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.6);
 }
